@@ -154,3 +154,58 @@ html {
 }
 
 
+/* Estado inicial: solo se activa mediante JavaScript. */
+.project-reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+/* Estado visible. */
+.project-reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Evita movimiento si el usuario lo ha solicitado. */
+@media (prefers-reduced-motion: reduce) {
+    .project-reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}
+
+.softwareSwiper {
+    width: 95%;
+    padding: 20px 0;
+    overflow: hidden;
+}
+
+.softwareSwiper .swiper-wrapper {
+    align-items: center;
+    transition-timing-function: linear !important;
+}
+
+.softwareSwiper .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.softwareSwiper .swiper-slide img {
+    display: block;
+    width: 100%;
+    max-width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.softwareSwiper .swiper-slide > img.logo-2x {
+    transform: scale(2);
+}
+
+.softwareSwiper .swiper-slide > img.logo-15 {
+    transform: scale(1.5);
+}
