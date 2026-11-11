@@ -145,7 +145,6 @@ html {
 
 .carousel{
     height: 100%;
-    object-fit: cover;
 }
 
 .carousel-inner{
@@ -154,17 +153,19 @@ html {
 
 .projectImage {
     display: block;
-    object-fit: cover;
 }
 
 .carouselProjectAutoplay .carousel-item img {
     display: block;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     object-position: center;
 }
 
+.project-front{
+    object-fit: cover !important;
+}
 .info-project{
     height: 100%;
 }
