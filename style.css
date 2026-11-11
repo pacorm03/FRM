@@ -40,8 +40,11 @@ html {
 .bg-image{
     background-image: url(./Assets/backgroundstars.jpg);
     background-size: cover;
+    
 }
-
+.projectDialog:not([open]):not(.hiding) {
+    display: none !important;
+}
 
 .bg-SocialButton{
     background-color: #8957FF;
