@@ -157,7 +157,7 @@ html {
     object-fit: cover;
 }
 
-#carouselAutoplaying .carousel-item img {
+.carouselProjectAutoplay .carousel-item img {
     display: block;
     width: 100%;
     height: 100%;
