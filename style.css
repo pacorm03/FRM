@@ -18,6 +18,7 @@ html {
 #NavBar .navbar-brand {
     transition: color 0.25s ease;
 }
+
 #Header {
     padding-top: 110px;
 }
@@ -45,6 +46,11 @@ html {
 .bg-SocialButton{
     background-color: #8957FF;
 }
+
+.bg-DarkSocialButton{
+    background-color: #46268f !important
+}
+
 .bg-translucent{
     background-color: #c8d1d9;
 }
@@ -60,6 +66,9 @@ html {
 }
 .fc-darkpurple{
     color: #625ab8 !important;
+}
+.fc-grey{
+    color:grey !important;
 }
 
 .fc-white{
@@ -208,4 +217,16 @@ html {
 
 .softwareSwiper .swiper-slide > img.logo-15 {
     transform: scale(1.5);
+}
+
+.bg-SocialButton {
+    transition: background-color 0.25s ease;
+}
+
+.bg-SocialButton svg {
+    transition: fill 0.25s ease;
+}
+
+p {
+    transition: color 0.25s ease;
 }

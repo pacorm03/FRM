@@ -10,6 +10,26 @@ function handlerOut(){
     console.log("this");
 }
 
+$(".bg-SocialButton").on("mouseenter", handlerInSocial).on("mouseleave",handlerOutSocial);
+
+function handlerInSocial(){
+    $(this).addClass("bg-DarkSocialButton");
+    $(this).find("svg").attr("fill", "grey");
+    $(this).find("p").addClass("fc-grey");
+    console.log($(this));
+}
+
+function handlerOutSocial(){
+    $(this).removeClass("bg-DarkSocialButton");
+    $(this).find("svg").attr("fill", "currentColor");
+    $(this).find("p").removeClass("fc-grey");
+
+    console.log("this");
+}
+
+
+var buttonSound = new Audio("./Assets/sounds/button.mp3");
+$("button, a").on("click", () => { buttonSound.play();})
 
 $(".projectButtons").on("mouseenter", handlerInProjects).on("mouseleave",handlerOutProjects);
 
