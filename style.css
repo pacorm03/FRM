@@ -15,6 +15,9 @@ html {
   width: 100%;
   z-index: 9999;
 }
+#NavBar .navbar-brand {
+    transition: color 0.25s ease;
+}
 #Header {
     padding-top: 110px;
 }
@@ -55,6 +58,9 @@ html {
 .fc-lightpurple{
     color: #9d94ff;
 }
+.fc-darkpurple{
+    color: #625ab8 !important;
+}
 
 .fc-white{
     color: #f9f7f7;
@@ -90,6 +96,8 @@ html {
     height: 500px;
     --bs-hover-lift-transform: translateY(-.5rem);
     --bs-hover-lift-transition-duration: .1s;
+        color: #9d94ff;
+
 }
 
 
@@ -144,3 +152,5 @@ html {
     object-fit: cover;
     object-position: center;
 }
+
+
