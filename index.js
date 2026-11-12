@@ -98,10 +98,3 @@ function swiperCarousel() {
         }
     });
 }
-$('.projectDialog [data-bs-dismiss="dialog"]').on("click", function () {
-    const elemento = $(this).closest("dialog").find(".carousel")[0];
-    const carousel = bootstrap.Carousel.getOrCreateInstance(elemento);
-
-    carousel.pause();
-    carousel.to(0);
-});
