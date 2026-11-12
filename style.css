@@ -254,6 +254,11 @@ p {
     transition: color 0.25s ease;
 }
 
+.projectDialog {
+    background-color: #1f1f1f;
+    border: 1px solid #333;
+}
+
 .info-project {
     display: flex;
     flex-direction: column;
@@ -280,6 +285,12 @@ p {
 
 }
  @media (min-width: 576px) and (max-width: 991.98px) {
+        .bg-image {
+        background-size: 100% auto;
+        background-position: center top;
+        background-repeat: repeat-y;
+        background-color: #020c14;
+    }
     #Contact .contact-items > div > a {
         flex-shrink: 0;
     }
@@ -453,4 +464,3 @@ p {
         width: 100%;
     }
 }
-
