@@ -252,3 +252,64 @@ p {
     display: flex;
     flex-direction: column;
 }
+
+@media (max-width: 575.98px) {
+    .software-pill {
+        width: calc(100% - 32px);
+        margin-inline: auto;
+        box-sizing: border-box;
+    }
+    
+    .projectsButtonSmall{
+        margin-inline: auto;
+    }
+       .projectsButtonSmall .projectButtons {
+        width: 100%;
+        height: 200px;
+        margin-top: 24px;
+        background-size: cover;
+    }
+
+
+    #Contact .col-10 {
+        width: 100%;
+    }
+
+    #Contact .contact-group {
+        background: transparent;
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+        border: 0;
+
+        padding: 0 !important;
+        border-radius: 0 !important;
+    }
+
+    #Contact .contact-items {
+        flex-direction: column;
+        gap: 12px;
+        margin: 0;
+    }
+
+    #Contact .contact-items > div {
+        width: 100%;
+        box-sizing: border-box;
+
+        padding: 10px 16px;
+        gap: 16px !important;
+
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        border-radius: 999px;
+    }
+
+
+    #Contact .contact-cv {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 16px;
+    }
+}
