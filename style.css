@@ -167,6 +167,14 @@ html {
     object-position: center;
 }
 
+.carouselProjectAutoplay .carousel-item video {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
 .project-front{
     object-fit: cover !important;
 }

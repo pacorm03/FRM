@@ -98,3 +98,8 @@ function swiperCarousel() {
         }
     });
 }
+
+
+$("video").on("play",() => {
+    $("#carouselEldritchAutoplaying").attr("data-bs-autoplay","false");
+})
